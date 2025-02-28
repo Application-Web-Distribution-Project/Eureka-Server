@@ -9,7 +9,8 @@ eureka:
   client:
     register-with-eureka: false  # Eureka Server ne s'enregistre pas lui-même
     fetch-registry: false  # Il ne doit pas récupérer la liste des services
-    instance:
-      hostname: 192.168.100.3
+  instance:
+    hostname: localhost
+
   server:
     wait-time-in-ms-when-sync-empty: 0
