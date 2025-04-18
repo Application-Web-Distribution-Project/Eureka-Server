@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-server
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://config-server:8888}
+      fail-fast: false
+      retry:
+        max-attempts: 20
+        max-interval: 15000
+        initial-interval: 10000
